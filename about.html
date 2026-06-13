@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me | Rhea Guo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.95);
+      border-bottom: 1px solid #e5e7eb;
+      padding: 20px 40px;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #1f2937;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #5b41d0;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 40px;
+    }
+
+    .title {
+      font-size: 2.8rem;
+      font-weight: 800;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .about-layout {
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .photo {
+      flex: 0 0 280px;
+    }
+
+    .photo img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    }
+
+    .text {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+      color: #111827;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 class="title">About Me</h1>
+
+    <div class="about-layout">
+      <div class="photo">
+        <img src="your-photo.jpg" alt="Photo of Rhea Guo">
+      </div>
+
+      <div class="text">
+        <div class="section">
+          <h2>Introduction</h2>
+          <p>
+            Hi, I’m Rhea Guo. I am a computer science student/researcher at
+            [Your University/Lab Name]. I am interested in building systems and tools
+            that are useful, reliable, and easy to use.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>Background</h2>
+          <p>
+            My academic background includes coursework and research in areas such as
+            [your area], [your area], and [your area]. I enjoy learning how technology can
+            solve real-world problems.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>Research Interests</h2>
+          <ul>
+            <li>Machine Learning</li>
+            <li>Human-Computer Interaction</li>
+            <li>Software Systems</li>
+            <li>[Add your interests here]</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>More About Me</h2>
+          <p>
+            Outside of research, I enjoy [hobby 1], [hobby 2], and [hobby 3].
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
