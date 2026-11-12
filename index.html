@@ -1,110 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rhea Guo</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #ffffff;
-      color: #222;
-      line-height: 1.6;
-    }
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    header {
-      background: #f8f9fb;
-      border-bottom: 1px solid #e5e7eb;
-      padding: 20px 40px;
-    }
+    <meta
+      name="description"
+      content="Runpeng (Rhea) Guo — Computer Science and Brain &amp; Cognitive Science. Work, research interests, and personal explorations."
+    >
 
-    nav {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
+    <title>Welcome | Rhea Guo</title>
 
-    nav a {
-      text-decoration: none;
-      color: #1f2937;
-      font-weight: 600;
-    }
+    <link rel="stylesheet" href="assets/style.css">
+    <script defer src="assets/reveal.js"></script>
+  </head>
 
-    nav a:hover {
-      color: #2563eb;
-    }
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
 
-    .hero {
-      max-width: 900px;
-      margin: 80px auto;
-      padding: 0 40px;
-      text-align: center;
-    }
+    <div class="botanical" aria-hidden="true"></div>
+    <div class="paper" aria-hidden="true"></div>
 
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-    }
+    <div class="site">
+      <header>
+        <a class="brand" href="index.html">Rhea Guo</a>
 
-    .hero p {
-      font-size: 1.2rem;
-      color: #555;
-      max-width: 700px;
-      margin: 0 auto 30px auto;
-    }
+        <nav aria-label="Main navigation">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="professional.html">Professional</a>
+          <a href="about.html">Explorative</a>
+        </nav>
+      </header>
 
-    .buttons {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
+      <main id="main">
+        <div class="entry">
+          <span class="eyebrow">Welcome</span>
 
-    .button {
-      display: inline-block;
-      padding: 12px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-    }
+          <h1>Dear Visitor</h1> <!-- add "good morning" "good afternoon" "good night" based on the visitor's time-->
 
-    .primary {
-      background: #4f46e5;
-      color: white;
-    }
+          <p>
+            Welcome to Rhea's Website, it’s a pleasure to see you here. This is a place to get to know me from different angles. Please choose the pace that suits you.
+          </p>
 
-    .secondary {
-      background: #e5e7eb;
-      color: #111827;
-    }
+          <div class="choices">
+            <div class="choice">
+              <h2>Research and Professional</h2>
 
-    .button:hover {
-      opacity: 0.9;
-    }
-  </style>
-</head>
+              <p>
+                A focused look at my background, research interests,
+                and work.
+              </p>
 
-<body>
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Me</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+              <span class="status">5–10 minutes</span>
+              <br>
 
-  <main class="hero">
-    <h1>Welcome to Rhea's Website</h1>
-    <p>
-      Hi, I’m Rhea and it's nice to see you here. This is a place where I will show you about me from various angles, so feel free to explore around!
-    </p>
+              <a class="cta" href="professional.html">
+                Get to know my work ↗
+              </a>
+            </div>
 
-    <div class="buttons">
-      <a class="button primary" href="about.html">About Me</a>
-      <a class="button secondary" href="portfolio.html">Portfolio</a>
+            <div class="choice">
+              <h2>Explorative Mode</h2>
+
+              <p>
+                A slower, interactive journey through the things
+                that shape my world.
+              </p>
+
+              <span class="status">More exciting things to come</span>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <span>Runpeng (Rhea) Guo</span>
+        <a href="index.html">Choose your pace ↗</a>
+      </footer>
     </div>
-  </main>
-</body>
+  </body>
 </html>
