@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery | Rhea Guo</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            align-items: start;
+            gap: 24px;
+            margin: 24px 0 16px;
+        }
+        .gallery-grid a {
+            display: block;
+        }
+        .gallery-grid img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        @media (max-width: 540px) {
+            .gallery-grid {
+                grid-template-columns: minmax(0, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="site">
+        <header>
+            <a class="brand" href="index.html">Rhea Guo</a>
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="professional.html">Professional</a>
+                <a href="about.html">Explorative</a>
+                <a href="gallery.html" aria-current="page">Gallery</a>
+            </nav>
+        </header>
+        <main id="main">
+            <h1>Gallery</h1>
+            <div class="gallery-grid">
+                <a href="assets/gallery-bamboo.jpg" aria-label="View full-size bamboo illustration">
+                    <img src="assets/gallery-bamboo.jpg" width="1079" height="2029" alt="A figure in flowing white robes seated in a blue bamboo grove">
+                </a>
+                <a href="assets/gallery-raccoon.jpg" aria-label="View full-size raccoon illustration">
+                    <img src="assets/gallery-raccoon.jpg" width="1080" height="1080" alt="A cartoon raccoon with pink cheeks on a warm brown background">
+                </a>
+            </div>
+        </main>
+        <footer><span>Runpeng (Rhea) Guo</span></footer>
+    </div>
+</body>
+</html>

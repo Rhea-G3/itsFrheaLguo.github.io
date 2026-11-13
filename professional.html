@@ -29,6 +29,7 @@
                     Professional
                 </a>
                 <a href="about.html">Explorative</a>
+              <a href="gallery.html">Gallery</a>
             </nav>
         </header>
 
@@ -48,14 +49,7 @@
                     </p>
                 </div>
 
-                <!-- Replace this placeholder with a portrait when available -->
-                <div
-                    class="portrait"
-                    role="img"
-                    aria-label="Portrait placeholder"
-                >
-                    Your photo
-                </div>
+                <img class="portrait" src="assets/rhea-portrait.png" alt="Portrait of Runpeng (Rhea) Guo">
             </div>
 
             <!-- Introduction -->
@@ -63,30 +57,45 @@
                 I’m an undergraduate studying Computer Science and Brain &amp; Cognitive Science. I’m interested in how interactive technology can augment perception, improve accessibility, and support learning.
             </p>
 
-            <section aria-labelledby="selected-work">
-                <h2 id="selected-work">Selected work</h2>
-                <article class="featured-work">
-                    <p class="eyebrow">XR · Accessibility</p>
-                    <h3><a href="portfolio.html#conxrtlens">ConXRtLens</a></h3>
-                    <p>Exploring how XR can make live music experiences more accessible.</p>
-                </article>
-            </section>
-
-            <!-- News draft to complete before displaying: Very excited to attend UIST2026 and -->
-
             <!-- Research Interests -->
             <section>
                 <h2>Research interests</h2>
-                <ul class="interests">
+                <ul class="interests research-tags" role="list">
                     <li>Human-Computer Interaction</li>
                     <li>Human-AI Interaction</li>
                     <li>VR/AR/MR</li>
                     <li>Biosignals</li>
-                    <li>A11y &amp; Cognitive Health</li>
+                    <li>Accessibility &amp; Cognitive Health</li>
                     <li>Immersive Experiences</li>
                 </ul>
             </section>
 
+            <section aria-labelledby="selected-work">
+                <h2 id="selected-work">Selected work</h2>
+                <article class="featured-work featured-work-with-image">
+                    <div>
+                        <p class="eyebrow">XR · Accessibility</p>
+                        <h3>ConXRtLens</h3>
+                        <p class="work-subtitle"><cite>Borrowing an Expert’s Ears: Perceptual Guidance for Novice Concert Appreciation in XR</cite></p>
+                        <p>Zhang, T., <strong>Guo, R.</strong> (co-first author), Wu, L., and Yan, Y.</p>
+                        <p class="muted">Finished manuscript</p>
+                    </div>
+                    <img class="work-thumbnail work-thumbnail-overview" src="assets/conxrtlens-overview.png" width="766" height="608"
+                         alt="ConXRtLens concert scene with a song timeline and visual cues around the performers">
+                </article>
+                <article class="featured-work featured-work-with-image">
+                    <div>
+                        <p class="eyebrow">XR · Time perception</p>
+                        <h3>Towards Designing Temporal Experience in Extended Reality</h3>
+                        <p>Zhang, T., Yang, C.-H., <strong>Guo, R.</strong>, Feng, C., Yang, J., Wang, Z., &amp; Yan, Y.</p>
+                        <p class="muted">Submitted to ACM IMWUT, November 2026</p>
+                    </div>
+                    <img class="work-thumbnail" src="assets/temporal-demo.png" width="906" height="480"
+                         alt="XR exercise demo with a headset wearer lifting a dumbbell">
+                </article>
+            </section>
+
+            <!-- News draft to complete before displaying: Very excited to attend UIST2026 and -->
         </main>
 
         <!-- Footer -->
