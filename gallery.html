@@ -22,6 +22,11 @@
             height: auto;
             border-radius: 4px;
         }
+        @media (min-width: 541px) {
+            .gallery-grid a:first-child {
+                grid-row: span 2;
+            }
+        }
         @media (max-width: 540px) {
             .gallery-grid {
                 grid-template-columns: minmax(0, 1fr);
@@ -48,6 +53,9 @@
                 </a>
                 <a href="assets/gallery-raccoon.jpg" aria-label="View full-size raccoon illustration">
                     <img src="assets/gallery-raccoon.jpg" width="1080" height="1080" alt="A cartoon raccoon with pink cheeks on a warm brown background">
+                </a>
+                <a href="assets/gallery-basketball-sunset.jpg" aria-label="View full-size basketball hoop image">
+                    <img src="assets/gallery-basketball-sunset.jpg" width="1080" height="1080" alt="Two small silhouettes on a basketball rim against a sunset sky">
                 </a>
             </div>
             <p class="muted">More to come</p>
