@@ -1,83 +1,115 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta
-      name="description"
-      content="Runpeng (Rhea) Guo — Computer Science and Brain &amp; Cognitive Science. Work, research interests, and personal explorations."
+        name="description"
+        content="Runpeng (Rhea) Guo — Computer Science and Brain &amp; Cognitive Science. Work, research interests, and personal explorations."
     >
 
-    <title>Welcome | Rhea Guo</title>
+    <title>About | Rhea Guo</title>
 
     <link rel="stylesheet" href="assets/style.css">
-    <script defer src="assets/reveal.js"></script>
-  </head>
+</head>
 
-  <body>
+<body class="professional-mode">
     <a class="skip" href="#main">Skip to content</a>
 
-    <div class="botanical" aria-hidden="true"></div>
-    <div class="paper" aria-hidden="true"></div>
-
     <div class="site">
-      <header>
-        <a class="brand" href="index.html">Rhea Guo</a>
 
-        <nav aria-label="Main navigation">
-          <a href="index.html" aria-current="page">Home</a>
-          <a href="professional.html">Professional</a>
-          <a href="about.html">Explorative</a>
-          <a href="gallery.html">Gallery</a>
-        </nav>
-      </header>
+        <!-- Header -->
+        <header>
+            <a class="brand" href="index.html">Rhea Guo</a>
 
-      <main id="main">
-        <div class="entry">
-          <span class="eyebrow">Welcome</span>
+            <nav aria-label="Main navigation">
+                <a href="index.html" aria-current="page">About</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
 
-          <h1>Dear Visitor</h1> <!-- add "good morning" "good afternoon" "good night" based on the visitor's time-->
+        <!-- Main Content -->
+        <main id="main">
 
-          <p>
-            Welcome to Rhea's Website, it’s a pleasure to see you here. This is a place to get to know me from different angles. Please choose the pace that suits you.
-          </p>
+            <!-- Profile Section -->
+            <div class="profile">
+                <div>
+                    <span class="eyebrow">About</span>
 
-          <div class="choices">
-            <div class="choice">
-              <h2>Research and Professional</h2>
+                    <h1>Runpeng (Rhea) Guo</h1>
 
-              <p>
-                A focused look at my background, research interests,
-                and work.
-              </p>
+                    <p>
+                        <span lang="zh-Hans">郭润芃</span><br>
+                        Computer Science<br>
+                        Brain &amp; Cognitive Science
+                    </p>
+                </div>
 
-              <span class="status">5–10 minutes</span>
-              <br>
-
-              <a class="cta" href="professional.html">
-                Get to know my work ↗
-              </a>
+                <img class="portrait" src="assets/rhea-portrait.png" alt="Portrait of Runpeng (Rhea) Guo">
             </div>
 
-            <div class="choice">
-              <h2>Explorative Mode</h2>
+            <!-- Introduction -->
+            <p class="intro">
+                I’m a senior studying Computer Science and Brain &amp; Cognitive Science. I conduct human–computer interaction (HCI) research in the BEAR group under the supervision of Prof. Yukang Yan. I’m interested in how interactive technology can augment perception, improve accessibility, and support learning.
+            </p>
 
-              <p>
-                A slower, interactive journey through the things
-                that shape my world.
-              </p>
+            <!-- Research Interests -->
+            <section>
+                <h2>Research interests</h2>
+                <ul class="interests research-tags" role="list">
+                    <li>Human-Computer Interaction</li>
+                    <li>Human-AI Interaction</li>
+                    <li>VR/AR/MR</li>
+                    <li>Biosignals</li>
+                    <li>Accessibility &amp; Cognitive Health</li>
+                    <li>Immersive Experiences</li>
+                </ul>
+            </section>
 
-              <span class="status">More exciting things to come</span>
-            </div>
-          </div>
-        </div>
-      </main>
+            <section aria-labelledby="selected-work">
+                <h2 id="selected-work">Selected work</h2>
+                <article class="featured-work featured-work-with-image">
+                    <div>
+                        <ul class="research-tags work-tags" role="list" aria-label="Project keywords">
+                            <li>XR</li>
+                            <li>Accessibility</li>
+                            <li>Perceptual Guidance</li>
+                        </ul>
+                        <h3>ConXRtLens</h3>
+                        <p class="work-subtitle"><cite>Borrowing an Expert’s Ears: Perceptual Guidance for Novice Concert Appreciation in XR</cite></p>
+                        <p>Zhang, T.<sup>*</sup>, <strong>Guo, R.</strong><sup>*</sup>, Wu, Y., Liu, B., Duan, Z., and Yan, Y.</p>
+                        <p class="muted">Finished manuscript</p>
+                    </div>
+                    <img class="work-thumbnail work-thumbnail-overview" src="assets/conxrtlens-overview.png" width="766" height="608"
+                         alt="ConXRtLens concert scene with a song timeline and visual cues around the performers">
+                </article>
+                <article class="featured-work featured-work-with-image">
+                    <div>
+                        <ul class="research-tags work-tags" role="list" aria-label="Project keywords">
+                            <li>XR</li>
+                            <li>Time Perception</li>
+                            <li>Immersive Experience Design</li>
+                        </ul>
+                        <h3>Towards Designing Temporal Experience in Extended Reality</h3>
+                        <p>Zhang, T., Yang, C.-H., <strong>Guo, R.</strong>, Feng, C., Yang, J., Wang, Z., &amp; Yan, Y.</p>
+                        <p class="muted">Submitted to ACM IMWUT, November 2026</p>
+                    </div>
+                    <img class="work-thumbnail" src="assets/temporal-demo.png" width="906" height="480"
+                         alt="XR exercise demo with a headset wearer lifting a dumbbell">
+                </article>
+            </section>
 
-      <footer>
-        <span>Runpeng (Rhea) Guo</span>
-        <a href="index.html">Choose your pace ↗</a>
-      </footer>
+            <!-- News draft to complete before displaying: Very excited to attend UIST2026 and -->
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <span>* These authors contributed equally.</span>
+            <span>Runpeng (Rhea) Guo</span>
+        </footer>
+
     </div>
-  </body>
+</body>
 </html>
