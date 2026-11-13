@@ -1,4 +1,289 @@
-:root{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:hsl(157 7.40741% 21.17647%);background:hsl(195 45.45455% 97.84314%);font-size:16px;line-height:1.75}*{box-sizing:border-box}body{margin:0;min-height:100vh}a{color:hsl(157 16.06218% 37.84314%);text-underline-offset:4px}a:hover{color:hsl(157 26.95652% 22.54902%)}a:focus-visible,button:focus-visible{outline:2px solid hsl(157 16.43192% 41.76471%);outline-offset:5px}.botanical{position:fixed;inset:0;z-index:0;pointer-events:none;background:hsl(195 45.45455% 97.84314%) url('pressed-specimens.jpg') center/cover no-repeat;filter:saturate(.7)}.paper{position:fixed;inset:0;z-index:1;pointer-events:none;background:hsl(195 45.45455% 97.84314%)}.paper.revealing{mask-image:radial-gradient(circle 180px at var(--x,-500px) var(--y,-500px),rgba(0,0,0,.55),rgba(0,0,0,.72) 35%,#000 100%);-webkit-mask-image:radial-gradient(circle 180px at var(--x,-500px) var(--y,-500px),rgba(0,0,0,.55),rgba(0,0,0,.72) 35%,#000 100%)}.site{position:relative;z-index:2;max-width:900px;margin:auto;padding:30px 48px 32px}header{display:flex;justify-content:space-between;align-items:center;gap:24px}header .brand{text-decoration:none;color:hsl(157 11.36364% 34.50980%);font-weight:500}nav{display:flex;gap:24px;flex-wrap:wrap;font-size:14px}nav a{text-decoration:none}nav [aria-current=page]{text-decoration:underline}main{padding:74px 0 24px}h1,h2,h3{font-weight:500;line-height:1.3}h1{font-size:36px;margin:12px 0 16px;letter-spacing:-.6px}h2{font-size:23px;margin:0 0 16px}h3{font-size:18px}p{margin:0 0 20px}.eyebrow{font-size:11px;letter-spacing:1.6px;color:hsl(157 8.29694% 44.90196%);text-transform:uppercase}.profile{display:flex;align-items:center;justify-content:space-between;gap:32px;margin:0 0 35px}.profile p{margin:0;color:hsl(157 9.45274% 39.41176%)}.portrait{width:190px;height:190px;flex:0 0 190px;border-radius:50%;background:hsl(157 18.91892% 92.74510%);border:1px dashed hsl(157 11.30435% 77.45098%);color:hsl(157 6.61157% 47.45098%);display:flex;align-items:center;justify-content:center;font-size:12px;object-fit:cover}section{padding:32px 0;border-top:1px solid hsl(157 14.70588% 86.66667%)}.intro{max-width:660px}.interests{padding-left:20px}.muted{color:hsl(157 6.60793% 44.50980%);font-size:14px}.choices{display:grid;grid-template-columns:1fr 1fr;gap:36px;margin-top:50px}.choice{border-top:1px solid hsl(157 14.70588% 86.66667%);padding-top:24px}.choice p{font-size:14px;color:hsl(157 8.65385% 40.78431%)}.choice h2{font-size:22px}.entry{padding-top:100px;padding-bottom:100px}.entry>p{max-width:580px}.status{font-size:13px;color:hsl(157 7.14286% 49.41176%)}.cta{display:inline-block;margin-top:8px}footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;border-top:1px solid hsl(157 14.70588% 86.66667%);padding-top:22px;font-size:12px;color:hsl(157 7.56303% 46.66667%)}.skip{position:absolute;left:20px;top:-100px;z-index:5;background:hsl(195 45.45455% 97.84314%);padding:10px}.skip:focus{top:10px}@media(max-width:600px){.site{padding:24px}header{align-items:flex-start;flex-direction:column;gap:15px}nav{gap:20px}main{padding-top:48px}.profile{gap:18px}.portrait{width:120px;height:120px;flex-basis:120px}h1{font-size:29px}.choices{grid-template-columns:1fr;gap:28px}.entry{padding-top:65px;padding-bottom:60px}}@media(prefers-reduced-motion:reduce){.paper.revealing{mask-image:none;-webkit-mask-image:none}}
+:root {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    color: hsl(157 7.40741% 21.17647%);
+    background: hsl(195 45.45455% 97.84314%);
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+a {
+    color: hsl(157 16.06218% 37.84314%);
+    text-underline-offset: 4px;
+}
+
+a:hover {
+    color: hsl(157 26.95652% 22.54902%);
+}
+
+a:focus-visible,button:focus-visible {
+    outline: 2px solid hsl(157 16.43192% 41.76471%);
+    outline-offset: 5px;
+}
+
+.botanical {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background: hsl(195 45.45455% 97.84314%) url('pressed-specimens.jpg') center/cover no-repeat;
+    filter: saturate(.7);
+}
+
+.paper {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: hsl(195 45.45455% 97.84314%);
+}
+
+.paper.revealing {
+    mask-image: radial-gradient(circle 180px at var(--x,-500px) var(--y,-500px),rgba(0,0,0,.55),rgba(0,0,0,.72) 35%,#000 100%);
+    -webkit-mask-image: radial-gradient(circle 180px at var(--x,-500px) var(--y,-500px),rgba(0,0,0,.55),rgba(0,0,0,.72) 35%,#000 100%);
+}
+
+.site {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: auto;
+    padding: 30px 48px 32px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+header .brand {
+    text-decoration: none;
+    color: hsl(157 11.36364% 34.50980%);
+    font-weight: 500;
+}
+
+nav {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav [aria-current=page] {
+    text-decoration: underline;
+}
+
+main {
+    padding: 74px 0 24px;
+}
+
+h1,h2,h3 {
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 12px 0 16px;
+    letter-spacing: -.6px;
+}
+
+h2 {
+    font-size: 23px;
+    margin: 0 0 16px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p {
+    margin: 0 0 20px;
+}
+
+.eyebrow {
+    font-size: 11px;
+    letter-spacing: 1.6px;
+    color: hsl(157 8.29694% 44.90196%);
+    text-transform: uppercase;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    margin: 0 0 35px;
+}
+
+.profile p {
+    margin: 0;
+    color: hsl(157 9.45274% 39.41176%);
+}
+
+.portrait {
+    width: 190px;
+    height: 190px;
+    flex: 0 0 190px;
+    border-radius: 50%;
+    background: hsl(157 18.91892% 92.74510%);
+    border: 1px dashed hsl(157 11.30435% 77.45098%);
+    color: hsl(157 6.61157% 47.45098%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    object-fit: cover;
+}
+
+section {
+    padding: 32px 0;
+    border-top: 1px solid hsl(157 14.70588% 86.66667%);
+}
+
+.intro {
+    max-width: 660px;
+}
+
+.interests {
+    padding-left: 20px;
+}
+
+.muted {
+    color: hsl(157 6.60793% 44.50980%);
+    font-size: 14px;
+}
+
+.choices {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+    margin-top: 50px;
+}
+
+.choice {
+    border-top: 1px solid hsl(157 14.70588% 86.66667%);
+    padding-top: 24px;
+}
+
+.choice p {
+    font-size: 14px;
+    color: hsl(157 8.65385% 40.78431%);
+}
+
+.choice h2 {
+    font-size: 22px;
+}
+
+.entry {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.entry>p {
+    max-width: 580px;
+}
+
+.status {
+    font-size: 13px;
+    color: hsl(157 7.14286% 49.41176%);
+}
+
+.cta {
+    display: inline-block;
+    margin-top: 8px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    border-top: 1px solid hsl(157 14.70588% 86.66667%);
+    padding-top: 22px;
+    font-size: 12px;
+    color: hsl(157 7.56303% 46.66667%);
+}
+
+.skip {
+    position: absolute;
+    left: 20px;
+    top: -100px;
+    z-index: 5;
+    background: hsl(195 45.45455% 97.84314%);
+    padding: 10px;
+}
+
+.skip:focus {
+    top: 10px;
+}
+
+@media (max-width:600px) {
+    .site {
+        padding: 24px;
+    }
+
+    header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 20px;
+    }
+
+    main {
+        padding-top: 48px;
+    }
+
+    .profile {
+        gap: 18px;
+    }
+
+    .portrait {
+        width: 120px;
+        height: 120px;
+        flex-basis: 120px;
+    }
+
+    h1 {
+        font-size: 29px;
+    }
+
+    .choices {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .entry {
+        padding-top: 65px;
+        padding-bottom: 60px;
+    }
+
+}
+
+@media (prefers-reduced-motion:reduce) {
+    .paper.revealing {
+        mask-image: none;
+        -webkit-mask-image: none;
+    }
+
+}
 
 .professional-mode .featured-work {
     max-width: 660px;
